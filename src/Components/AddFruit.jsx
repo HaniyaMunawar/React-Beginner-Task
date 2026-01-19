@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AddFruit({}) {
+function AddFruit() {
   const [input, setInput] = useState("");
   const [fruit, setFruits] = useState(["Apple", "Banana", "Orange"]);
 
