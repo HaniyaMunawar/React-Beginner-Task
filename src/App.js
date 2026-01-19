@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Greeting from './Components/Greeting';
+import WelcomeMessage from './Components/WelcomeMessage';
+import Counter from './Components/Counter';
+import Toggle from './Components/Toggle';
+import Input from './Components/Input';
+import FruitList from './Components/FruitList';
+import AddFruit from './Components/AddFruit';
+import Login from './Components/Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <WelcomeMessage />
+      <Greeting name="User" />
+      <Counter />
+      <Toggle />
+      <Input />
+      <FruitList />
+      <AddFruit />
+      <Login />
+      <Footer />
     </div>
   );
 }
